@@ -56,11 +56,9 @@ int main()
 	Cat cat("¾ß¿Ë");
 	Cow cow("À½¸Å");
 
-	Animal arr[3] = {dog, cat, cow};
-	Animal* ptr = arr;
+	Animal* ptr[] = {&dog, &cat, &cow};
 
 	for (int i = 0; i < 3; ++i)
-		print(ptr);
-
+		print(ptr[i]);
 	return 0;
 }
